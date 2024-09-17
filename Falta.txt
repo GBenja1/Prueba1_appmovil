@@ -1,2 +1,9 @@
-Tenemos que hacer el login y el arreglo con los usuarios o el que es de admin no mas.
+TAREA LISTA 
+**Tenemos que hacer el login y el arreglo con los usuarios o el que es de admin no mas.
+
+
+FALTA POR HACER:
 Tambien tenemos que agregarle estilos a todos los html.
+Agregar algunas paginas mas a parte del home y el login.
+Hacer estilos distintos.
+
