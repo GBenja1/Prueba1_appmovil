@@ -21,7 +21,8 @@
     "lib": ["es2018", "dom"],
     "useDefineForClassFields": false,
     "strictPropertyInitialization": false,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
