@@ -3,5 +3,5 @@ export interface Usuario {
   nombreCompleto: string;
   usuario: string;
   clave: string;
-  telefono: string;
+
 }

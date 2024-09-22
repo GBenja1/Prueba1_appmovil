@@ -1,6 +1,5 @@
 <ion-content>
   <app-header></app-header>
-
   <p>
     login works!
   </p>
@@ -9,13 +8,28 @@
     <ion-input [(ngModel)]="usuario"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label position="floating">Clave</ion-label>
+    <ion-label position="floating">Contraseña</ion-label>
     <ion-input [(ngModel)]="clave"></ion-input>
   </ion-item>
-  <ion-button (click)="login(usuario, clave)">Iniciar sesión</ion-button>
+  <ion-button (click)="login(usuario, clave)" id="present-alert">Iniciar sesión</ion-button>
   <!-- Mostrar mensaje de error si el login falla -->
-  <ion-text color="danger" *ngIf="loginFailed">
-    Usuario o clave incorrectos.
-  </ion-text>
+  @if(loginFailed===true){
+    <ion-alert
+      trigger="present-alert"
+      header="Error..."
+      message="Usuario o contraseña incorrecta."
+      *ngIf="loginFailed"
+    ></ion-alert>
+  }
+  @if(loginFailed===false){
+    <ion-alert
+      trigger="present-alert"
+      header="Inicio correctamente."
+      message="Bienvenido, {{usuario}}."
+      *ngIf="loginFailed===false"
+    ></ion-alert>
+  }
+
+
   <app-footer></app-footer>
 </ion-content>

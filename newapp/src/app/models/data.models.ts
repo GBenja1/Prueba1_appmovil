@@ -2,21 +2,21 @@ import { Usuario } from "./bd.models";
 
 export const usuariosSimulados: Usuario[] = [
   { id: 1,
-    nombreCompleto: "benjamin gonzalez",
+    nombreCompleto: "Benjamin Gonzalez",
     usuario: "benjamin",
-    clave: "benja",
-    telefono: "123456789"
+    clave: "benja123",
+
   },
   { id: 2,
-    nombreCompleto: "lukas qiñilen",
+    nombreCompleto: "Lukas Quiñilen",
     usuario: "lukas",
-    clave: "lukas1",
-    telefono: "11111111"
+    clave: "lukas123",
+
   },
   { id: 3,
-    nombreCompleto: "juan carlos",
+    nombreCompleto: "Juan Carlos",
     usuario: "juan",
     clave: "juan123",
-    telefono: "22222222"
+
   }
 ];

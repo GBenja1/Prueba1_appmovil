@@ -1,0 +1,72 @@
+ion-content {
+  background-color: aliceblue; // Azul claro
+  --ion-background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; // Para que ocupe toda la pantalla
+  padding: 20px;
+
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Centramos el contenido horizontalmente
+  width: 100%; // Ocupa todo el ancho
+  max-width: 400px; // Limita el ancho máximo del formulario
+}
+
+p {
+  font-size: 1.2em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+ion-item {
+  --highlight-color-focused: #1e88e5; // Azul para foco
+   // Ajustamos el ancho al contenedor del formulario
+  white-space: 90%;
+  margin-bottom: 15px;
+  border-radius: 50px; // Bordes redondeados
+  padding: 8px; // Espacio interno
+
+}
+
+ion-label {
+  font-size: 1em;
+  color: #000000;
+}
+
+ion-input {
+  font-size: 1em;
+  color: #000000;
+}
+
+ion-button {
+  --background: #1e88e5;
+  --background-activated: #1565c0;
+  display: flex;
+  justify-content: center;  // Centra el botón horizontalmente
+  align-items: center;  // Centra el botón verticalmente
+  width: 100%;  // El contenedor ocupa todo el ancho
+  margin-top: 20px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+ion-text {
+
+  font-size: 1.5em;
+  color: #e53935;
+  text-align: center;
+  display: flex;
+  justify-content: center;  // Centra el texto horizontalmente
+  margin-top: 20px;
+}
+
+
