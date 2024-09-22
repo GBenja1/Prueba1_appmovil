@@ -1,1 +1,143 @@
+/* Importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos base */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background-color:  #002D40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: white;
+    color:  #002D40;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #e0f7fa;
+}
+
+/* Contenido principal */
+.main-content {
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome-section h2 {
+    font-size: 24px;
+    color: #00796b;
+}
+
+.class-section {
+    margin-bottom: 20px;
+}
+
+.class-list {
+    list-style: none;
+}
+
+.class-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.class-item h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.attendance-button {
+    background-color:  #002D40;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.attendance-button:hover {
+    background-color:  #002D40;
+}
+
+.calendar-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #b2dfdb;
+    border-radius: 10px;
+}
+
+.calendar-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.calendar {
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: #002D40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
