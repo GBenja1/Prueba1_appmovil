@@ -8,13 +8,14 @@ import { LoginComponent } from './login/login.component';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
-
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     LoginComponent,
-    InicioComponent
+    InicioComponent,
+    RegistroComponent
   ],
   imports: [
     CommonModule,

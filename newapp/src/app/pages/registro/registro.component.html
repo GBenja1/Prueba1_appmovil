@@ -1,0 +1,25 @@
+<ion-content>
+  <app-header></app-header>
+  <p>
+    registro works!
+  </p>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input [(ngModel)]="usuario"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input [(ngModel)]="clave"></ion-input>
+  </ion-item>
+  <ion-button class="bo-registro" [routerLink]="['/home']">Registrar</ion-button>
+
+
+  <footer>
+    hola
+    <ion-button shape="round" class="b-footer" [routerLink]="['/home']" color="white"> Home</ion-button>
+  </footer>
+</ion-content>

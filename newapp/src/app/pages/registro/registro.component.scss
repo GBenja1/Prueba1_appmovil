@@ -19,15 +19,6 @@ form {
   max-width: 400px; // Limita el ancho máximo del formulario
 }
 
-
-p {
-  font-size: 1.2em;
-  color: #000000;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
 ion-item {
   --highlight-color-focused: #1e88e5; // Azul para foco
    // Ajustamos el ancho al contenedor del formulario
@@ -36,16 +27,6 @@ ion-item {
   border-radius: 50px; // Bordes redondeados
   padding: 8px; // Espacio interno
 
-}
-
-ion-label {
-  font-size: 1em;
-  color: #000000;
-}
-
-ion-input {
-  font-size: 1em;
-  color: #000000;
 }
 
 ion-button {
@@ -60,14 +41,29 @@ ion-button {
   padding-right: 30%;
 }
 
-ion-text {
-
-  font-size: 1.5em;
-  color: #e53935;
+footer{
+  background-color: #002D40;
+  color: white;
   text-align: center;
-  display: flex;
-  justify-content: center;  // Centra el texto horizontalmente
-  margin-top: 20px;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
+.b-footer{
+  --background: #ffffff;  /* Cambia el color de fondo */
+  --border-radius: 50px;
+  padding: 5px;
+  margin-top: 10%;
+  padding-left: 30%;
+  padding-right: 30%;
 
+}
+.bo-registro {
+  text-decoration: none;
+  color: #ffffff; /* Cambia el color según tus preferencias */
+  font-weight: bold;
+}
