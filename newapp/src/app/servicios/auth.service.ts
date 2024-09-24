@@ -35,5 +35,11 @@ export class AuthService {
       this.loginFailedSubject.next(true);  // Establecer loginFailed a true si falla la autenticación
     }
   }
+  logout(): void {
+    this.usuarioSubject.next('');  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  //
+    this.isAuthenticatedSubject.next(false); // Desloguearse y desactivar el estado de autenticación.  // Desloguearse y
+    this.loginFailedSubject.next(false);  // Restablecer loginFailed al cerrar sesión
+  }
+
 }
 

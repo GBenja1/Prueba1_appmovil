@@ -140,3 +140,20 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+ion-content {
+  --background: #f9f9f9;  /* Cambiar el color de fondo */
+}
+
+ion-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+ion-content::-webkit-scrollbar-thumb {
+  background-color: #0004ff; /* Color de la barra de desplazamiento */
+  border-radius: 10px;
+}
+
+ion-content::-webkit-scrollbar-thumb:hover {
+  background: #0004ff;
+}
