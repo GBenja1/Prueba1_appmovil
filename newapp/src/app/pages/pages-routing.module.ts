@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
 import { LogoutComponent } from './logout/logout.component';
+import { InicioalumComponent } from './inicioalum/inicioalum.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent},
   { path: 'registro', component: RegistroComponent},
   { path: 'logout', component: LogoutComponent},
+  { path: 'inicioalum', component: InicioalumComponent}
 ];
 
 @NgModule({

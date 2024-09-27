@@ -36,9 +36,16 @@ export class LoginComponent  implements OnInit {
     this.authService.isAuthenticated$.subscribe(isAuthenticated => {
 
       if (isAuthenticated) {
-        this.usuario = ''; // Limpiar el campo de usuario
-        this.clave = ''; // Limpiar el campo de clave
-        this.router.navigate(['/inicio']); // Redirigir al usuario si el login es exitoso
+        if(usuario === 'pedro') {
+          this.usuario = '';
+          this.clave = '';
+          this.router.navigate(['/inicio']);
+        }
+        else{
+          this.usuario = '';
+          this.clave = '';
+          this.router.navigate(['/inicioalum']);
+        }
       } else {
         this.loginFailed = true; // Mostrar mensaje de error si el login falla
       }

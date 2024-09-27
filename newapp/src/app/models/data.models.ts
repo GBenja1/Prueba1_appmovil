@@ -18,5 +18,11 @@ export const usuariosSimulados: Usuario[] = [
     usuario: "juan",
     clave: "juan123",
 
+  },
+  {
+    id: 4,
+    nombreCompleto: "Profesor Pedro Gomes",
+    usuario: "pedro",
+    clave: "pedro123",
   }
 ];

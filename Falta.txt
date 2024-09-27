@@ -1,9 +1,6 @@
-TAREA LISTA 
-**Tenemos que hacer el login y el arreglo con los usuarios o el que es de admin no mas.
-
-
 FALTA POR HACER:
-Tambien tenemos que agregarle estilos a todos los html.
-Agregar algunas paginas mas a parte del home y el login.
-Hacer estilos distintos.
+1-boton de reestablecer contraseña
+2-detalle de las asigtanura para el profe (la pagina del profe es la de inicio)
+3-detalle de las asignatura para el alumno (la pagina del alumno es inicio alumno)
+4-boton de QR uno en el inicio del profe y otro para inicioalum para el alumno en cada asignatura
 
