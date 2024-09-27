@@ -1,2 +1,111 @@
+// Variables de color
+$primary-color: #002D40;
+$secondary-color: #04abf3;
+$background-color: #f4f4f4;
+$text-color: #333;
+
+// Reset básico
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+header {
+    background-color: $primary-color;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo h1 {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+
+            li a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    background-color: $secondary-color;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-button {
+        background-color: white;
+        color: $secondary-color;
+        border: none;
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($secondary-color, 10%);
+            color: white;
+        }
+    }
+}
+
+.about {
+  padding: 2rem 2rem; // Reducimos el padding superior e inferior a 2rem
+  background-color: $background-color;
+  text-align: center;
+
+  h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+  }
+
+  p {
+      font-size: 1.3rem;
+      color: darken($text-color, 15%);
+  }
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: $primary-color;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
 
