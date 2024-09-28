@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
 import { LogoutComponent } from './logout/logout.component';
+import { InicioalumComponent } from './inicioalum/inicioalum.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LogoutComponent } from './logout/logout.component';
     LoginComponent,
     InicioComponent,
     RegistroComponent,
-    LogoutComponent
+    LogoutComponent,
+    InicioalumComponent
   ],
   imports: [
     CommonModule,

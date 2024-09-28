@@ -12,24 +12,16 @@
     <ion-label position="floating">Contraseña</ion-label>
     <ion-input [(ngModel)]="clave"></ion-input>
   </ion-item>
-  <ion-button (click)="login(usuario, clave)" id="present-alert">Iniciar sesión</ion-button>
+  @if (isLoading) {
+    <ion-spinner name="bubbles"></ion-spinner>
+  }
+  <ion-button (click)="login(usuario, clave)">Iniciar sesión</ion-button>
+
+  <div class="container">
+    <ion-button class="bo-reestablecer">Reestablecer contraseña</ion-button>
+  </div>
   <!-- Mostrar mensaje de error si el login falla -->
-  @if(loginFailed===true){
-    <ion-alert
-      trigger="present-alert"
-      header="Error..."
-      message="Usuario o contraseña incorrecta."
-      *ngIf="loginFailed"
-    ></ion-alert>
-  }
-  @if(loginFailed===false){
-    <ion-alert
-      trigger="present-alert"
-      header="Inicio correctamente."
-      message="Bienvenido, {{usuario}}."
-      *ngIf="loginFailed===false"
-    ></ion-alert>
-  }
+
 
 
   <app-footer></app-footer>
