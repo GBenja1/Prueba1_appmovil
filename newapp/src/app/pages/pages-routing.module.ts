@@ -6,6 +6,10 @@ import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
 import { LogoutComponent } from './logout/logout.component';
 import { InicioalumComponent } from './inicioalum/inicioalum.component';
+import { DetallemateComponent } from './detallemate/detallemate.component';
+import { DetallecienciasComponent } from './detalleciencias/detalleciencias.component';
+import { DetallehistoriaComponent } from './detallehistoria/detallehistoria.component';
+import { DetallelenguajeComponent } from './detallelenguaje/detallelenguaje.component';
 
 
 const routes: Routes = [
@@ -15,7 +19,11 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent},
   { path: 'registro', component: RegistroComponent},
   { path: 'logout', component: LogoutComponent},
-  { path: 'inicioalum', component: InicioalumComponent}
+  { path: 'inicioalum', component: InicioalumComponent},
+  { path: 'detallemate', component: DetallemateComponent},
+  { path: 'detalleciencias', component: DetallecienciasComponent},
+  { path: 'detallehistoria', component: DetallehistoriaComponent},
+  { path: 'detallelenguaje', component: DetallelenguajeComponent}
 ];
 
 @NgModule({

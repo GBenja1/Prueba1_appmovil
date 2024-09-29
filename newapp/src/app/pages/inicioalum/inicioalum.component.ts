@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-inicioalum',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioalumComponent  implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {}
+
+
 
 }

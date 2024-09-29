@@ -12,6 +12,11 @@ import { RegistroComponent } from './registro/registro.component';
 import { LogoutComponent } from './logout/logout.component';
 import { InicioalumComponent } from './inicioalum/inicioalum.component';
 
+import { DetallemateComponent } from './detallemate/detallemate.component';
+import { DetallecienciasComponent } from './detalleciencias/detalleciencias.component';
+import { DetallehistoriaComponent } from './detallehistoria/detallehistoria.component';
+import { DetallelenguajeComponent } from './detallelenguaje/detallelenguaje.component';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -19,7 +24,11 @@ import { InicioalumComponent } from './inicioalum/inicioalum.component';
     InicioComponent,
     RegistroComponent,
     LogoutComponent,
-    InicioalumComponent
+    InicioalumComponent,
+    DetallemateComponent,
+    DetallecienciasComponent,
+    DetallehistoriaComponent,
+    DetallelenguajeComponent
   ],
   imports: [
     CommonModule,

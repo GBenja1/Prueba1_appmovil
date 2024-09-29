@@ -19,8 +19,8 @@ export class FooterComponent  implements OnInit {
 
 
   ngOnInit() {
-    this.authService.usuario$.subscribe(usuario => this.usuario = usuario); // Obtiene el nombre del usuario logueado
-    this.authService.usuarioCompleto$.subscribe(usuarioCompleto => {
+      this.authService.usuario$.subscribe(usuario => this.usuario = usuario); // Obtiene el nombre del usuario logueado
+      this.authService.usuarioCompleto$.subscribe(usuarioCompleto => {
       this.usuarioCompleto = usuarioCompleto; // Almacena los datos del usuario en el footer (en caso de estar logueado)
       console.log('Footer:', this.usuarioCompleto); // Muestra en consola los datos del usuario al cargar el footer (en caso de estar logueado)
     });

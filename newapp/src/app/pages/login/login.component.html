@@ -16,6 +16,9 @@
     <ion-spinner name="bubbles"></ion-spinner>
   }
   <ion-button (click)="login(usuario, clave)">Iniciar sesión</ion-button>
+  <ion-text color="danger" *ngIf="loginFailed">
+    Usuario o clave incorrectos.
+  </ion-text>
 
   <div class="container">
     <ion-button class="bo-reestablecer">Reestablecer contraseña</ion-button>

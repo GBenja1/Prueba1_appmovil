@@ -1,14 +1,11 @@
-/* Importación de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos base */
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f9;
@@ -25,7 +22,7 @@ body {
     overflow: hidden;
 }
 
-/* Header */
+
 .header {
     background-color:  #002D40;
     color: white;
@@ -100,14 +97,18 @@ body {
 }
 
 .attendance-button {
-    background-color:  #002D40;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  --background: #002D40;  /* Color de fondo del botón */
+  --background-activated: #001D28;  /* Color de fondo cuando el botón se presiona */
+  --background-focused: #003C50;  /* Color de fondo cuando el botón está enfocado */
+  --color: white;  /* Color del texto */
+  border: 20px;
+  padding: 5px 10px;
+  font-size: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+
 }
 
 .attendance-button:hover {

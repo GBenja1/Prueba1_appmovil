@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Profesor Benjamin Gonzalez",
+    "user": "benjamin",
+    "pass": "benja123",
+    "rol": "docente",
+    "id": "1"
+  },
+  {
+    "name": "Profesor Lukas Quiñilen",
+    "user": "lukas",
+    "pass": "lukas123",
+    "rol": "docente",
+    "id": "2"
+  },
+  {
+    "name": "lukas quiñilen",
+    "user": "Lukas",
+    "pass": "Lukas123",
+    "rol": "alumno",
+    "id": "3"
+  },
+  {
+    "name": "benjamin gonzalez",
+    "user": "Benjamin",
+    "pass": "Benja123",
+    "rol": "alumno",
+    "id": "4"
+  },
+  {
+    "name": "Profesor Helton Smith",
+    "user": "helton",
+    "pass": "helton123",
+    "rol": "docente",
+    "id": "5"
+  },
+  {
+    "name": "helton smith",
+    "user": "Helton",
+    "pass": "Helton123",
+    "rol": "alumno",
+    "id": "6"
+  }
+]
