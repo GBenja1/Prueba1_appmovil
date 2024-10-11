@@ -3,7 +3,7 @@
   <p>
     !Bienvenido¡ <br> <br>Registrese aqui
   </p>
-  <ion-item>
+ <!--  <ion-item>
     <ion-label position="floating">Nombre</ion-label>
     <ion-input [(ngModel)]="nombre"></ion-input>
   </ion-item>
@@ -15,8 +15,42 @@
     <ion-label position="floating">Contraseña</ion-label>
     <ion-input [(ngModel)]="clave"></ion-input>
   </ion-item>
-  <ion-button class="bo-registro" [routerLink]="['/inicio']">Registrar</ion-button>
+  <ion-item>
+    <ion-label position="floating" >Rol</ion-label>
+    <ion-select [(ngModel)]="rol">
+      <ion-select-option value="docente">Docente</ion-select-option>
+      <ion-select-option value="alumno">Alumno</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button class="bo-registro" (click)="registrar()">Registrar</ion-button> -->
 
+<ion-item>
+  <ion-label position="floating">Nombre</ion-label>
+  <ion-input [(ngModel)]="nombre" required></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Usuario</ion-label>
+  <ion-input [(ngModel)]="usuario" required></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Contraseña</ion-label>
+  <ion-input [(ngModel)]="clave" type="password" required></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Rol</ion-label>
+  <ion-select [(ngModel)]="rol" required>
+      <ion-select-option value="docente">Docente</ion-select-option>
+      <ion-select-option value="alumno">Alumno</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-button class="bo-registro" (click)="registrar()">Registrar</ion-button>
+  <div *ngIf="successMessage" style="color: green;" class="p-3">
+    <h2>{{ successMessage }}</h2>
+  </div>
+
+  <div *ngIf="errorMessage" style="color: rgb(255, 0, 0);" class="p-3">
+    <h2>{{ errorMessage }}</h2>
+  </div>
 
   <app-footer></app-footer>
 </ion-content>
