@@ -1,3 +1,4 @@
+import { usuariosapi } from 'src/app/models/usuariosapi.models';
 import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
@@ -38,7 +39,7 @@ export class RegistroComponent{
     }
   }
 
-  /* async registrar() {
+  async registrar() {
     // Limpiar mensajes anteriores
     this.errorMessage = '';
     this.successMessage = '';
@@ -64,15 +65,15 @@ export class RegistroComponent{
       await this.authService.registrarNuevoUsuario(nuevoUsuario);
       this.successMessage = 'Usuario registrado exitosamente!';
       await this.mostrarAlerta('Éxito', this.successMessage);  // Muestra alerta de éxito
-      //this.router.navigate(['/inicio']);  // Redirige al login después del registro exitoso
+      this.router.navigate(['/home']);  // Redirige al login después del registro exitoso
     } catch (error) {
       this.errorMessage = 'Hubo un error al registrar el usuario. Inténtalo de nuevo.';
       this.registroFallido = true;
       await this.mostrarAlerta('Error', this.errorMessage);  // Muestra alerta de error
     }
-  } */
+  }
 
-    async registrar() {
+    /* async registrar() {
       // Limpiar mensajes anteriores
       this.errorMessage = '';
       this.successMessage = '';
@@ -105,14 +106,20 @@ export class RegistroComponent{
           this.successMessage = 'Usuario registrado exitosamente!';
           await this.mostrarAlerta('Éxito', this.successMessage);
           // Descomentar si deseas redirigir después del registro
-          // this.router.navigate(['/login']);
+
       } catch (error) {
           this.errorMessage = 'Hubo un error al registrar el usuario. Inténtalo de nuevo.';
           this.registroFallido = true;
           await this.mostrarAlerta('Error', this.errorMessage);
           console.error('Error al registrar usuario:', error); // Para ver el error en consola
       }
-    }
+      if(nuevoUsuario.rol === 'docente'){
+        this.router.navigate(['/inicio']); // Redirige al inicio del docente
+      } else {
+        this.router.navigate(['/inicioalum']); // Redirige al inicio del alumno
+
+      }
+    } */
 
 
   async mostrarAlerta(header: string, message: string) {

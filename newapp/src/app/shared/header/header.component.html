@@ -1,17 +1,12 @@
 <div class="cabecera" [ngClass]="{'iniciado': usuario!==''}">
-  @if (nombre){
-    <p>
-      Bienvenido: {{nombre}}
-    </p>
-  }
-  @else{
-    <p>
-      APP Colegio XYZ
-    </p>
-  }
+
+
+  <p>
+    APP Colegio XYZ
+  </p>
   @if (usuario!==''){
     <p>
-      Usuario: {{usuario}}
+      Usuario: {{usuario}} - {{usuarioCompleto.rol}}
     </p>
   }
 </div>

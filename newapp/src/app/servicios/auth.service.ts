@@ -47,7 +47,7 @@ export class AuthService {
     }
   }
 
-  /* async registrarNuevoUsuario(usuario: any) {
+  async registrarNuevoUsuario(usuario: any) {
     const url = 'https://66f84d6f2a683ce9730f2cf4.mockapi.io/api/v1Colegio/';
     try {
       // Verifica si el usuario ya existe antes de registrarlo
@@ -58,27 +58,16 @@ export class AuthService {
         throw new Error('El usuario ya existe');
       }
 
-      const res = await this.webservice.request('POST', url, 'usuarios');
+      const res = await this.webservice.request('POST', url, 'usuarios',usuario);
       console.log('Usuario registrado con éxito', res);
       return res; // Devuelve la respuesta exitosa del registro
     } catch (error) {
       console.error('Error al registrar usuario:', error);
       throw error; // Propaga el error para manejarlo en el componente
     }
-  } */
-
-  async registrarNuevoUsuario(usuario: any) {
-    const url = 'https://66f84d6f2a683ce9730f2cf4.mockapi.io/api/v1Colegio/';
-    try {
-        // Aquí debes pasar el objeto 'usuario' como el body de la petición
-        const res = await this.webservice.request('POST', url, 'usuarios', usuario);
-        console.log('Usuario registrado con éxito:', res);
-        return res;
-    } catch (error) {
-        console.error('Error al registrar usuario:', error);
-        throw error; // Propaga el error
-    }
   }
+
+
 
   async obtenerUsuarios(): Promise<usuariosapi[]> {
     const url = 'https://66f84d6f2a683ce9730f2cf4.mockapi.io/api/v1Colegio/';

@@ -1,4 +1,4 @@
-<ion-content style="overflow-y: auto;">
+<ion-content style="overflow-y: auto; height: 100vh;">
   <app-header></app-header>
   <body>
     <div class="container">
@@ -19,37 +19,43 @@
             </section>
 
             <section class="class-section">
-                <h3>Tus Clases</h3>
-                <ul class="class-list">
-                    <li class="class-item">
-                        <h4>Matemáticas - Grado 1</h4>
-                        <ion-button class="attendance-button">Tomar Asistencia</ion-button>
-                        <ion-button routerLink="/detallelenguaje" class="attendance-button"> Detalle asignatura</ion-button>
-                    </li>
+              <h3>Tus Clases</h3>
+              <ul class="class-list">
+                <li class="class-item">
+                  <h4>Matemáticas - Grado 1</h4>
+                  <ion-button (click)="generateQRCode('Matemáticas - Grado 1')" class="attendance-button">Generar QR</ion-button>
+                  <ion-button routerLink="/detallelenguaje" class="attendance-button">Detalle asignatura</ion-button>
+                </li>
 
+                <li class="class-item">
+                  <h4>Ciencias - Grado 1</h4>
+                  <ion-button (click)="generateQRCode('Ciencias - Grado 1')" class="attendance-button">Generar QR</ion-button>
+                  <ion-button routerLink="/detallelenguaje" class="attendance-button">Detalle asignatura</ion-button>
+                </li>
 
-                    <li class="class-item">
-                        <h4>Ciencias - Grado 1</h4>
-                        <ion-button class="attendance-button">Tomar Asistencia</ion-button>
-                        <ion-button routerLink="/detallelenguaje" class="attendance-button"> Detalle asignatura</ion-button>
-                    </li>
+                <li class="class-item">
+                  <h4>Historia - Grado 1</h4>
+                  <ion-button (click)="generateQRCode('Historia - Grado 1')" class="attendance-button">Generar QR</ion-button>
+                  <ion-button routerLink="/detallelenguaje" class="attendance-button">Detalle asignatura</ion-button>
+                </li>
 
-                    <li class="class-item">
-                        <h4>Historia - Grado 1</h4>
-                        <ion-button class="attendance-button">Tomar Asistencia</ion-button>
-                        <ion-button routerLink="/detallelenguaje" class="attendance-button"> Detalle asignatura</ion-button>
-                    </li>
-                    <li class="class-item">
-                      <h4>Lenguaje - Grado 1</h4>
-                      <ion-button class="attendance-button">Tomar Asistencia</ion-button>
-                      <ion-button routerLink="/detallelenguaje" class="attendance-button"> Detalle asignatura</ion-button>
-                  </li>
-                </ul>
+                <li class="class-item">
+                  <h4>Lenguaje - Grado 1</h4>
+                  <ion-button (click)="generateQRCode('Lenguaje - Grado 1')" class="attendance-button">Generar QR</ion-button>
+                  <ion-button routerLink="/detallelenguaje" class="attendance-button">Detalle asignatura</ion-button>
+                </li>
+              </ul>
             </section>
+
+            <div class="mx-auto text-center">
+              <h2>Código QR</h2>
+
+              <canvas  id="qrcode" style="display: block; margin: 20px auto; max-width: 100%;"></canvas>
+            </div>
 
 
         </main>
     </div>
 </body>
-  <app-footer></app-footer>
+<app-footer></app-footer>
 </ion-content>

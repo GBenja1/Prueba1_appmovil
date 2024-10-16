@@ -144,6 +144,8 @@ body {
 
 ion-content {
   --background: #f9f9f9;  /* Cambiar el color de fondo */
+  padding-bottom: 60px;  /* Asegura que el contenido tenga espacio para el footer */
+  height: calc(100vh - 60px);
 }
 
 ion-content::-webkit-scrollbar {
@@ -157,4 +159,23 @@ ion-content::-webkit-scrollbar-thumb {
 
 ion-content::-webkit-scrollbar-thumb:hover {
   background: #0004ff;
+}
+canvas#qrcode {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+}
+.footer {
+  background-color: #002D40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  position: fixed;  /* Fijar el footer */
+  bottom: 0;
+  left: 0;
+  width: 100%;  /* Para que ocupe todo el ancho de la pantalla */
+  z-index: 100;  /* Asegura que el footer esté por encima del contenido */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
