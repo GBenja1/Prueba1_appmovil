@@ -80,9 +80,9 @@ export class AuthService {
     }
   }
   logout(): void {
-    this.usuarioSubject.next('');  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  // Resetear el nombre de usuario al desloguearse.  //
-    this.isAuthenticatedSubject.next(false); // Desloguearse y desactivar el estado de autenticación.  // Desloguearse y
-    this.loginFailedSubject.next(false);  // Restablecer loginFailed al cerrar sesión
+    this.usuarioSubject.next(''); // Resetear el nombre de usuario al desloguearse
+    this.isAuthenticatedSubject.next(false); // Desloguearse y desactivar el estado de autenticación
+    this.loginFailedSubject.next(false);
   }
 
 }

@@ -57,5 +57,28 @@
         </main>
     </div>
 </body>
-<app-footer></app-footer>
+<div class="pie" >
+  <p>
+    Colegio XYZ
+  </p>
+  <ion-button shape="round" [routerLink]="['/home']" color="white"> Home</ion-button>
+
+  @if(usuario){
+
+    <ion-button shape="round" (click)="presentLogoutAlert()" id="logout-button"color="white">Cerrar Sesion</ion-button>
+    @if (usuarioCompleto.rol === 'docente'){
+      <ion-button shape="round" [routerLink]="['/inicio']" color="white"> Inicio</ion-button>
+    }
+    @else {
+      <ion-button shape="round" [routerLink]="['/inicioalum']" color="white"> Clases</ion-button>
+    }
+  }
+  @else {
+    <ion-button shape="round" [routerLink]="['/login']" color="white"> Login</ion-button>
+    <ion-button shape="round" [routerLink]="['/registro']" color="white"> Registro</ion-button>
+  }
+
+</div>
+<!-- <app-footer ></app-footer> -->
 </ion-content>
+

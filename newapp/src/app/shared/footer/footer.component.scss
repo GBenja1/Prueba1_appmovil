@@ -1,5 +1,6 @@
 .pie {
-  position: absolute;
+  display: inline;
+  position: absolute; /* Cambiado de fixed a absolute */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -7,8 +8,6 @@
   padding: 10px;
   text-align: center;
   color: white;
-
-  position: fixed;
 }
 ion-button {
 

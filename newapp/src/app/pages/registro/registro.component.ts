@@ -26,11 +26,13 @@ export class RegistroComponent{
   private alertController = inject(AlertController);
 
   registroFallido: boolean = false;
-
+  isLoading: boolean = false;
 
   async validarUsuarioExistente(usuario: string): Promise<boolean> {
     try {
+      this.isLoading = true;
       const usuariosExistentes = await this.authService.obtenerUsuarios();
+      this.isLoading = false;
       return usuariosExistentes.some(u => u.user === usuario);
     } catch (error) {
       this.errorMessage = 'Error al validar el usuario';

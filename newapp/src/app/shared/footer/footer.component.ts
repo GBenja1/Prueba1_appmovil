@@ -44,8 +44,8 @@ export class FooterComponent  implements OnInit {
           handler: () => {
             console.log('Cerrando sesión...');
             this.authService.logout();
-            this.router.navigate(['/login']);  // Redirigir al login después de salir.navigate(['/login']);  // Redirigir al login después de salir
-            // Aquí puedes poner la lógica para redirigir o cerrar sesión
+            this.router.navigate(['/login']);
+
           }
         }
       ]

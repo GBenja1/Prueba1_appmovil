@@ -24,6 +24,9 @@
       <ion-select-option value="alumno">Alumno</ion-select-option>
   </ion-select>
 </ion-item>
+@if (isLoading) {
+  <ion-spinner name="bubbles"></ion-spinner>
+}
 <ion-button class="bo-registro" (click)="registrar()">Registrar</ion-button>
 
 
