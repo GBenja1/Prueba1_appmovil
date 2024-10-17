@@ -75,53 +75,7 @@ export class RegistroComponent{
     }
   }
 
-    /* async registrar() {
-      // Limpiar mensajes anteriores
-      this.errorMessage = '';
-      this.successMessage = '';
-      this.registroFallido = false;
 
-      // Crear un objeto nuevo usuario
-      const nuevoUsuario = {
-          user: this.usuario,
-          pass: this.clave,
-          name: this.nombre,
-          rol: this.rol
-      };
-
-      // Imprimir el usuario para verificar
-      console.log('Registrando nuevo usuario:', nuevoUsuario);  // Esto te ayudará a verificar los datos
-
-      // Verificar si el usuario ya existe
-      const usuarioExiste = await this.validarUsuarioExistente(this.usuario);
-
-      if (usuarioExiste) {
-          this.errorMessage = 'El nombre de usuario ya está en uso. Por favor, elige otro.';
-          this.registroFallido = true;
-          await this.mostrarAlerta('Error', this.errorMessage);
-          return;
-      }
-
-      try {
-          // Registrar el nuevo usuario
-          await this.authService.registrarNuevoUsuario(nuevoUsuario);
-          this.successMessage = 'Usuario registrado exitosamente!';
-          await this.mostrarAlerta('Éxito', this.successMessage);
-          // Descomentar si deseas redirigir después del registro
-
-      } catch (error) {
-          this.errorMessage = 'Hubo un error al registrar el usuario. Inténtalo de nuevo.';
-          this.registroFallido = true;
-          await this.mostrarAlerta('Error', this.errorMessage);
-          console.error('Error al registrar usuario:', error); // Para ver el error en consola
-      }
-      if(nuevoUsuario.rol === 'docente'){
-        this.router.navigate(['/inicio']); // Redirige al inicio del docente
-      } else {
-        this.router.navigate(['/inicioalum']); // Redirige al inicio del alumno
-
-      }
-    } */
 
 
   async mostrarAlerta(header: string, message: string) {

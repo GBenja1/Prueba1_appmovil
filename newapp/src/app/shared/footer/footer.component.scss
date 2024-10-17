@@ -1,6 +1,6 @@
 .pie {
-  display: inline;
-  position: absolute; /* Cambiado de fixed a absolute */
+
+  position: static; /* Cambiado de fixed a absolute */
   bottom: 0;
   left: 0;
   width: 100%;

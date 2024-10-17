@@ -1,6 +1,6 @@
 <ion-content style="overflow-y: auto; height: 100vh;">
   <app-header></app-header>
-  <body>
+
     <div class="container">
         <header class="header">
             <h1 class="logo">Colegio XYZ</h1>
@@ -56,29 +56,8 @@
 
         </main>
     </div>
-</body>
-<div class="pie" >
-  <p>
-    Colegio XYZ
-  </p>
-  <ion-button shape="round" [routerLink]="['/home']" color="white"> Home</ion-button>
 
-  @if(usuario){
 
-    <ion-button shape="round" (click)="presentLogoutAlert()" id="logout-button"color="white">Cerrar Sesion</ion-button>
-    @if (usuarioCompleto.rol === 'docente'){
-      <ion-button shape="round" [routerLink]="['/inicio']" color="white"> Inicio</ion-button>
-    }
-    @else {
-      <ion-button shape="round" [routerLink]="['/inicioalum']" color="white"> Clases</ion-button>
-    }
-  }
-  @else {
-    <ion-button shape="round" [routerLink]="['/login']" color="white"> Login</ion-button>
-    <ion-button shape="round" [routerLink]="['/registro']" color="white"> Registro</ion-button>
-  }
-
-</div>
-<!-- <app-footer ></app-footer> -->
+<app-footer ></app-footer>
 </ion-content>
 
